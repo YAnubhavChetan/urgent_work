@@ -276,8 +276,8 @@ main {
 @media screen and (max-width: 1400px) {
   .our-work-section .work-grid {
     margin-top: 6.25vw;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    /*-ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;*/
   }
 }
 
