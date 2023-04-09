@@ -713,52 +713,11 @@ header .mobile-nav .mobile-nav-container-active {
 
 
 
-  
-main {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 50px;
-}
-  
 section {
   margin-bottom: 50px;
-}
-  
-h2 {
-  font-size: 36px;
-  color: #333;
-  margin-bottom: 20px;
 }
   
 img {
   max-width: 100%;
   height: auto;
 }
-  
-ul {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-}
-  
-li {
-  width: calc(33.33% - 20px);
-  margin-right: 20px;
-  margin-bottom: 20px;
-}
-  
-li:last-child {
-  margin-right: 0;
-}
-  
-a {
-  display: block;
-  text-decoration: none;
-  color: #333;
-}
-  
-h3 {
-  font-size: 24px
-}
-  
-  
