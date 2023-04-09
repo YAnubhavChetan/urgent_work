@@ -88,14 +88,81 @@
         </div>
       </div>
     </header>
-    <main>
+    <main style="margin-top: 120px;">
       <section>
         <h2>OUR OFFICE</h2>
         <img src="https://th.bing.com/th/id/OIP.tCgjv-n2QsfK1RZN-twGQAHaE_?w=264&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Profile picture">
         <p>CONNECT WITH MINDS DON'T WASTE TIME.</p>
       </section>
-      <section>
-        <h2>OUR SERVICES</h2>
+      <section class="our-services-section container">
+        <div class="title">
+            <h2>Our Services</h2>
+        </div>
+        <div class="services-container">
+          <a href="#">
+              <div class="service js-tilt" style="will-change: transform; transform: perspective(1400px) rotateX(0deg) rotateY(0deg);">
+                  <div class="service-title">
+                      <h4>UI/UX/CX</h4>
+                  </div>
+                  <div class="service-content">
+                      <p>
+                          Have you heard the phrase "The first impression is the last impression."? That is exactly what UI/UX helps you achieve, a good first impression on your visitor. Every business application needs a
+                          smooth and easy navigating user experience to help increase its sales and growth.The fine line
+                          between UI/UX is in its outlook and user experience.
+                      </p>
+                      <p>
+                          The user interface team here at Wolfx ensures that both navigation and design are delivered in 
+                          their best form, providing your user with a smooth experience. Furthermore, a team of graphic designers
+                          helps you decide the best color scheme, button shapes, font size, and style for your business.
+                          In simple terms, they become the visualizing eye of your website.
+                      </p>
+                  </div>
+              </div>
+          </a>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <ul>
           <li>
             <a href="#">
@@ -139,6 +206,74 @@
 
 <!-- Canvas BG -->
 <canvas id="canvas"></canvas>
-<script src="/static/js/main.js" defer></script>
+<script src="main.js" defer></script>
+
+<!-- Tilt JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.0.3/tilt.jquery.min.js"
+  integrity="sha512-14AZ/DxUrlF26z6v7egDkpJHKyJRn/7ue2BgpWZ/fmqrqVzf4PrQnToy99sHmKwzKev/VZ1tjPxusuTV/n8CcQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" defer>
+</script>
+
+    
+<script>
+  $(document).ready(function () {
+        // Service Tilt
+        $('.js-tilt').tilt({
+            maxTilt: 20,
+            perspective: 1400,
+            speed: 0,
+            glare: true,
+            maxGlare: 0.2,
+        })
+
+        $('.client-slider').slick({
+            infinite: true,
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            arrows: false,
+            dots: false,
+            responsive: [
+                {
+                    breakpoint: 800,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: false,
+                        autoplay: true,
+                        autoplaySpeed: 2000,
+                    }
+                },
+            ]
+        });
+
+        $('.review-slider').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            dost: true
+        })
+
+        var tl = new TimelineMax({ repeat: -1, repeatDelay: 5 });
+
+        // FAQ
+        const accItems = document.querySelectorAll(".accordion__item");
+        accItems.forEach((acc) => acc.addEventListener("click", toggleAcc));
+        function toggleAcc() {
+            // toggle active class on current item
+            if (this.classList != "accordion__item--active") {
+                this.classList.toggle("accordion__item--active");
+            }
+        }
+
+    })
+
+</script>
+
+
+
+
+
 
 </html>

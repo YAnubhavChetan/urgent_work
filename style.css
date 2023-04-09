@@ -558,7 +558,15 @@ header .mobile-nav .mobile-nav-container-active {
   opacity: 0.2;
 }
 
-
+h2 {
+  font-size: 2rem;
+  color: #ff2b2b;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
 
 
 
