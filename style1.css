@@ -312,8 +312,8 @@ main {
 .our-work-section .work-grid .work .img-container img {
   height: 100%;
   width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 .our-work-section .work-grid .work .problem-container {
